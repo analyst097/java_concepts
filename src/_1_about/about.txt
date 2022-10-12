@@ -1,0 +1,26 @@
+About Java
+
+Definition
+    - object-oriented, class based, concurrent, general purpose computer programming language.
+    - high level, robust and secure language
+    - James Gosling is the father of Java
+    - it is a language and a platform
+
+    - Any hardware or software env in which a program runs is known as a platform. Since Java has a runtime env
+        and API, it is called a platform.
+
+Types of Java Applications
+
+   1. Standalone
+   2. Web
+   3. Enterprise
+   4. Mobile
+
+Java Platforms / Editions
+
+    - 4 platforms of Java
+
+        1. Java SE - programming platform
+        2. Java EE - enterprise platform for web and enterprise apps
+        3. Java ME - micro platform for mobile apps
+        4. Java FX - used to develop rich internet apps. It uses a lightweight user interface API

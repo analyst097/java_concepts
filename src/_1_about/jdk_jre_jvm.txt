@@ -1,0 +1,35 @@
+
+
+JVM (Java Virtual Machine)
+
+    - it is an abstract machine
+    - it doesn't physically exist
+    - it is a specification that provides a runtime env in which java bytecode can run.
+    - can also run those programs which are written in other languages and compiled to java bytecode
+    - platform dependent
+    - available for software and hardware platforms
+    - three notions of Java
+        1. specification
+        2. implementation
+        3. instance
+
+    - performs the following main tasks
+        1. loads code
+        2. verifies code
+        3. executes code
+        4. provides runtime env
+
+
+JRE ( Java Runtime Environment )
+
+    - set of software tools used for developing Java apps
+    - it is the implementation of JVM
+    - exists physically
+    - set of libs + other files that JVM uses at rt
+    - many implementations of JVM are released by other companies
+
+
+JDK ( Java Development Kit )
+
+    - software development environment which is used to develop Java apps and applets
+    - contains JRE + devtools

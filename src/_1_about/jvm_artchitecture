@@ -1,0 +1,23 @@
+
+JVM Architecture
+
+    1. Classloader
+
+    - it is a subsystem of JVM which is used to load class files
+    - when we run a java program it is loaded first by the classloader
+    - 3 built in class loaders in Java
+
+        1. Bootstrap classloader
+            - first classloader which is the super class of Extension classloader.
+            - it loads the rt.jar file which contains all class files of Java SE like java.lang package classes,
+                java.net package classes, java.util, java.io, java.sql package classes.
+
+        2. Extension classloader
+            - this is the child classloader of Bootstrap and parent classloader of System classloader.
+                It loads the jar files located inside $JAVA_HOME/jre/lib/ext directory
+
+        3. System/Application classloader
+            - this is the child class loader of Extension classloader.
+            - it loads the classfiles from classpath.
+            - by default classpath is set to current directory
+            - can change the classpath using -cp or -classpath switch.
