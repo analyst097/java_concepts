@@ -1,0 +1,37 @@
+
+Constructors
+
+    - Rules for creating constructor
+        1. constructor name is same as class name
+        2. no explicit return type
+        3. it cannot be static, final, abstract or synchronized
+
+
+    Copy Constructor
+       - ways to copy values of one object into another
+             1. by constructor
+                Student(Student s){
+                    id = s.id;
+                }
+             2. by assigning values of one object into another
+             3. by clone() method of Object class
+
+
+    - constructor can perform tasks other than initialization like creating a thread, calling a method etc, just like a normal method.
+    - there is a Constructor class in java in java.lang.reflect package. It is used to get the internal info of a constructor in the class.
+
+
+
+
+Ways to create an object in Java -
+
+    1. By new keyword
+    2. By newInstance() method
+    3. By clone() method
+    4. By deserialization
+    5. By factory method
+
+    Anonymous Objects
+        - can be used only at the time of creation
+        - can be used only once
+

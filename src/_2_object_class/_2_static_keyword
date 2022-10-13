@@ -1,0 +1,21 @@
+
+
+Static Keyword
+
+- it is used for memory management mainly
+- it can used with
+    - variables
+    - methods
+    - blocks
+    - nested classes
+
+- it belongs to the class than an instance of it
+
+    1. Static Variable
+         - it can be used to refer to the common property of all objects
+         - it gets memory only once in the class area at the time of class loading
+
+         advantages -> makes your program memory efficient
+
+    2. Static method
+        -

@@ -1,23 +1,72 @@
 
 JVM Architecture
 
+    What is JVM
+
+    - it is a specification where working of JVM is specified. But implementation provider is independent to choose the alog.
+        its implementation has been provided by Oracle and many other companies
+    - an implementation known as JRE
+    - runtime instance - when we run a java class an instance of JVM is created
+
+    Performs the following operations -
+
+        1. Loads
+        2. Verifies
+        3. Executes
+        4. Provides runtime env
+
+    JVM provides definition for the:
+        1. Memory area
+        2. Class file format
+        3. Register set
+        4. Garbage collected heap
+        5. Fatal error reporting etc.
+
     1. Classloader
+        - it is a subsystem of JVM which is used to load class files
+        - when we run a java program it is loaded first by the classloader
+        - 3 built in class loaders in Java
 
-    - it is a subsystem of JVM which is used to load class files
-    - when we run a java program it is loaded first by the classloader
-    - 3 built in class loaders in Java
+            1. Bootstrap classloader
+                - first classloader which is the super class of Extension classloader.
+                - it loads the rt.jar file which contains all class files of Java SE like java.lang package classes,
+                    java.net package classes, java.util, java.io, java.sql package classes.
 
-        1. Bootstrap classloader
-            - first classloader which is the super class of Extension classloader.
-            - it loads the rt.jar file which contains all class files of Java SE like java.lang package classes,
-                java.net package classes, java.util, java.io, java.sql package classes.
+            2. Extension classloader
+                - this is the child classloader of Bootstrap and parent classloader of System classloader.
+                    It loads the jar files located inside $JAVA_HOME/jre/lib/ext directory
 
-        2. Extension classloader
-            - this is the child classloader of Bootstrap and parent classloader of System classloader.
-                It loads the jar files located inside $JAVA_HOME/jre/lib/ext directory
+            3. System/Application classloader
+                - this is the child class loader of Extension classloader.
+                - it loads the classfiles from classpath.
+                - by default classpath is set to current directory
+                - can change the classpath using -cp or -classpath switch.
 
-        3. System/Application classloader
-            - this is the child class loader of Extension classloader.
-            - it loads the classfiles from classpath.
-            - by default classpath is set to current directory
-            - can change the classpath using -cp or -classpath switch.
+
+    2. Class Area
+        - stores per-class structures such as the runtime constant pool, field and method data, code for methods
+
+    3. Heap
+        - it is the runtime data area in which objects are allocated
+
+    4. Stack
+        - it stores frames. it holds local variables and partial results and plays a part in method invocation and return
+        - each thread has a private jvm stack, created as the same time as thread.
+        - a new frame is created each time a method is invoked and is destroyed when the invocation completes
+
+    5. PC register
+        - it contains the address of the jvm instruction currently being executed
+
+    6. Native Method Stack
+        - contains all the native methods used in the application
+
+    7. Execution Engine
+        - contains
+            1. virtual processor
+            2. interpreter - read bytecode stream then execute the instructions
+            3. JIT compiler - used to improve the performance. it compiles parts of the bytecode that have similar
+                              functionality at the same time and hence reduces the amount of time needed for compilation.
+
+    8. Java Native Interface
+        - it is a framework which provides an interface to communicate with another application writtern in other languages such as
+            c, c++ etc. Java used JNI to send output to the console or interact with OS libs.
