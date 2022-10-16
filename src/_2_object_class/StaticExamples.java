@@ -30,8 +30,12 @@ class Student {
 class Counter {
     static int count = 0;
 
-    public Counter() {
+    static void increment(){
         count++;
+    }
+
+    public Counter() {
+        increment();
         System.out.println(count);
     }
 }

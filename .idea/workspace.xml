@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79c404d9-c49a-48c2-9c8e-be28d3bfecb9" name="Changes" comment="about java concepts">
-      <change afterPath="$PROJECT_DIR$/src/_2_object_class/StaticExamples.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_2_object_class/_1_constructor.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_2_object_class/_2_static_keyword" afterDir="false" />
+    <list default="true" id="79c404d9-c49a-48c2-9c8e-be28d3bfecb9" name="Changes" comment="Object and class, static keyword">
+      <change afterPath="$PROJECT_DIR$/src/_2_object_class/ThisExamples.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_2_object_class/ThisKeyword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_2_object_class/_3_this_keyword.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_about/jvm_artchitecture" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_about/jvm_artchitecture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_2_object_class/StaticExamples.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2_object_class/StaticExamples.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_2_object_class/_2_static_keyword" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2_object_class/_2_static_keyword" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665554386776</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Object and class, static keyword">
+      <created>1665635571915</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665635571915</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,6 +112,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="about java concepts" />
-    <option name="LAST_COMMIT_MESSAGE" value="about java concepts" />
+    <MESSAGE value="Object and class, static keyword" />
+    <option name="LAST_COMMIT_MESSAGE" value="Object and class, static keyword" />
   </component>
 </project>

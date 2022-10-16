@@ -18,4 +18,16 @@ Static Keyword
          advantages -> makes your program memory efficient
 
     2. Static method
-        -
+        - it belongs to class rather than instance of a class
+        - it can be invoked without creating an object of that class
+        - it can access the static data member and can modify its value
+
+        restrictions on static method
+            - it cannot use non-static data member or call non-static method directly
+            - this and super cannot be used in static context
+
+
+    3. Static block
+        - it is used to initialize static data member
+        - it is executed before the main method at the time of class loading
+
